@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>FACE RECOGNTION PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="webcam.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Face Recognition</h1>
+        <br>
+        <h2>Model is trained to identify the following objects:</h2>
+        <br>
+        <div>
+            <label>Me</label>
+        </div>
+        <br>
+        <div>
+            <label>My brother</label>
+        </div>
+        <br>
+        <h3>Webcam View-</h3>
+        <div id="camera"></div>
+        <br>
+        <h3>Captured Image</h3>
+        <div id="result"></div>
+        <br>
+        <button class="btn btn-success" id="capture_image" onclick="take_snapshot()">Capture Image</button>
+        <br>
+        <button class="btn btn-success" id="identify_image" onclick="identifyimage()">Identify Image</button>
+        <br>
+        <label>Family Member:<span id="result_name"></span></label>
+        <br>
+        <label>Accuracy:<span id="result_accuracy"></span></label>
+    </center>
+</body>
+
+</html>
